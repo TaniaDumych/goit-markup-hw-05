@@ -683,7 +683,7 @@ fill: #2e2f42;
 width: 18px;
 height: 24px;
 pointer-events: none;
-top: 50%;
+top: 65%;
 left: 16px;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -708,6 +708,8 @@ padding: 8px 16px;
 outline: transparent;
 resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+width: 360px;
+height: 120px;
 }
 .input-comment:focus {
 border-color: #4d5ae5;
@@ -735,8 +737,8 @@ color: #8e8f99;
 cursor: pointer;
 }
 .icon-image {
-width: 10px;
-height: 8px;
+width: 18px;
+height: 24px;
 }
 .privacy {
 text-decoration: underline;
