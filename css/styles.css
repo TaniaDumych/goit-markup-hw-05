@@ -508,7 +508,7 @@ letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
 }
-.Subscribe-email {
+.subscribe-email {
 display: flex;
 gap: 24px;
 }
@@ -528,6 +528,7 @@ height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding-left: 16px;
 background-color: #2e2f42;
+background-color: transparent;
 }
 .input-subscribe::placeholder {
 color: #ffffff;
@@ -539,20 +540,20 @@ align-items: center;
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
 background: #4d5ae5;
 border-radius: 4px;
 padding: 8px 24px;
-width: 165px;
 height: 40px;
 cursor: pointer;
 box-sizing: border-box;
 border: none;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+min-width: 165px;
 }
 .icon-frame {
 width: 24px;
@@ -615,19 +616,24 @@ background-color: #e7e9fc;
 border: 1px solid rgba(0, 0, 0, 0.1);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-button:hover {
+background-color: #404bbf;
+fill: #ffffff;
+}
+.close-button:focus {
+background-color: #404bbf;
+border: none;
+fill: #ffffff;
+}
 .icons-close {
 width: 8px;
 height: 8px;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button-close:hover {
-background-color: #404bbf;
-border: none;
- fill: #ffffff;
+.icons-close:hover {
+fill: #ffffff;
 }
-.close-button-close:focus {
-background-color: #404bbf;
-border: none;
+.icons-close:focus {
 fill: #ffffff;
 }
 .modal-text {
@@ -641,12 +647,12 @@ color: #2e2f42;
 margin-bottom: 16px;
 }
 .form-adress {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 .form-contacts {
-    position: relative;
-    margin-bottom: 8px;
+position: relative;
+margin-bottom: 8px;
 }
 .label {
 font-family: "Roboto", sans-serif;
@@ -671,6 +677,9 @@ background-color: transparent;
 padding-left: 40px;
 outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border: 1px solid rgba(46, 47, 66, 0.4);
+background-color: transparent;
+padding-left: 38px;
 }
 
 .input:focus {
@@ -678,10 +687,12 @@ border-color: #4d5ae5;
 fill: #4d5ae5;
 }
 .icon-image {
+width: 18px;
+height: 24px;
 position: absolute;
 fill: #2e2f42;
 pointer-events: none;
-top: 65%;
+top: 50%;
 left: 16px;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -708,6 +719,7 @@ resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 width: 360px;
 height: 120px;
+color: rgba(46, 47, 66, 0.4);
 }
 .input-comment:focus {
 border-color: #4d5ae5;
