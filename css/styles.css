@@ -619,6 +619,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .close-button:hover {
 background-color: #404bbf;
 fill: #ffffff;
+border: none;
 }
 .close-button:focus {
 background-color: #404bbf;
@@ -699,6 +700,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-image:focus {
 fill: #4d5ae5;
+}
+.input:focus + .icon-image {
+fill: #4D5AE5;
 }
 .form-contacts-comment {
 margin-bottom: 16px;
